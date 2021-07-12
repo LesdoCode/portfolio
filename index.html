@@ -16,22 +16,21 @@
         <!--navbar-->
         <ul class="nav justify-content-center navbar-fixed-top t-nav-color">
             <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Home</a>
+                <a class="nav-link active" aria-current="page" href="#bio">Home</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">About</a>
+                <a class="nav-link active" aria-current="page" href="#social">Social</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Skills</a>
+                <a class="nav-link active" aria-current="page" href="#skills">Skills</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Social</a>
+                <a class="nav-link active" aria-current="page" href="#portfolio">Portfolio</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Portfolio</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Resume</a>
+                <a class="nav-link active" aria-current="page" href="#resume">
+                    Resume
+                </a>
             </li>
         </ul>
 
@@ -57,7 +56,11 @@
                         
                         <h5>Based in</h5>
                         <p class='text-light'>South Africa</p>
-                        
+
+                        <section id='social'>
+                            <!--Just for visual reference when rendering on screen-->
+                        </section>
+
                         <h5>Born</h5>
                         <p class='text-light'>August 18, 1998</p>
                         
@@ -77,7 +80,7 @@
 
 
             <!--skills-->
-            <div class="section alternate-section-color margin-up">
+            <div class="section alternate-section-color margin-up" id='skills'>
                 <h1 class='title'>Skills</h1>
 
                 <!--skills-->
@@ -146,15 +149,92 @@
                 </div>
             </div>
 
-            
+            <!--Portfolio-->
+            <div class="section" id='portfolio'>
+                <h1 class='title'>Portfolio</h1>
 
-            <div class="button text-center">
-                <a href='#bio' class='text-light'>
-                    <h1>
-                        <i class="bi bi-arrow-up-short"></i>
-                    </h1>
-                </a>
+                <!--content-->
+                <div class='content row text-left'>
+                    <div class="t-big-card">
+                        <h3 class=''>Work Experience</h3>
+                        
+                        <hr class='mb-5'>
+                        <h5>At LesdoCode</h5>
+                        <p class='text-light'>Software developer</p>
+                        
+                        <p class='text-light'>
+                            LesdoCode, a company I made, I built software, scripts, automations and websites for friends and family and ofcourse, Myself too.
+                        </p>
+                    </div>
+                </div>
+
+                <!--content-->
+                <div class='content row text-left'>
+                    <div class="t-big-card">
+                        <h3 class=''>Projects</h3>
+                        
+                        <hr class='mb-5'>
+                        <p class='text-light'>RSVP app</p>
+                        
+                        <p class='text-light'>
+                            This is a webapp I build for a church to help register people for services during covid times.
+                            It manages the number of people coming into each service.<br>
+                            <a class='btn btn-secondary mt-3' href='https:lesdocode-rsvp.herokuapp.com'>Open RSVP</a>
+                        </p>
+                        <br><br>
+                        <p class='text-light'>Tesla Website Clone</p>
+                        <p class='text-light'>
+                            This is a clone of the tesla website which I made using react.js<br>
+                            <a class='btn btn-secondary mt-3' href='https://lesdocode.github.io/tesla-website-clone/'>Open Tesla website clone</a>
+                        </p>
+
+                        <br><br>
+                        <p class='text-light'>Campus Delivery</p>
+                        <p class='text-light'>
+                            This is an e-commerce website I made for a friend who owns a food delivery business at 
+                            some university. It's highly scalable and easy to use for the end user<br>
+                            <a class='btn btn-secondary mt-3' href='http://campusdelivery.herokuapp.com/'>Open Campus Delivery</a>
+                        </p>
+
+                        <br><br>
+                        <p class='text-light'>Employee Scheduling App</p>
+                        <p class='text-light'>
+                            This is a desktop app built in C# that manages an event. It was built for church during a time where 
+                            people didn't know what to do (during a conference). In attempts to make it scalable, I came up with an app
+                            that could manage any kind of event with any number of venues and employees and create schedules.
+                            <br>
+                            <a class='btn btn-secondary mt-3' href='https://github.com/LesdoCode/C-Sharp-Scheduling_App-Prototype'>View Scheduler on GitHub</a>
+                        </p>
+
+                        <br><br>
+                        <p class='text-light'>Computer Cleaning App</p>
+                        <p class='text-light'>
+                            This is a desktop app built in C# that cleans my computer regularly. It helps declutter my PC, especially on my desktop. 
+                            I learnt that as a developer, I should make my own tools and this was one of the first tools I made. (Note: It may not work on devices with an antivirus.)
+                            <br>
+                            <a class='btn btn-secondary mt-3' href='https://github.com/LesdoCode/C-Sharp-File-Cleaner'>View Cleaner on GitHub</a>
+                        </p>
+                    </div>
+                </div>
+
+
+                <!--content-->
+                <div id='resume' class='content row text-center'>
+                    <div class="t-big-card">
+                        <h3 class=''>Resume</h3>
+                        
+                        <hr class='mb-5'>
+                        
+                        <p class='text-light'>
+                            <a class='btn btn-secondary' href='documents/my-cv.pdf' download='Tebogo Lemekoana CV'> Download my CV</a>
+                        </p>
+                        
+                        
+                    </div>
+                </div>
             </div>
+
+            
             
         </div>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
