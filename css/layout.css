@@ -1,186 +1,195 @@
-body{
-    background: url('../images/background.jpg');
-    background-repeat: no-repeat;
-    background-position: center;
-    background-attachment: fixed;
-    background-size: cover;
-    width: 100%;
-    overflow-x: hidden;
+body {
+	background: url("../images/background.jpg");
+	background-repeat: no-repeat;
+	background-position: center;
+	background-attachment: fixed;
+	background-size: cover;
+	width: 100%;
+	overflow-x: hidden;
 }
 
 .content {
-    padding-top: 50px;
-    max-width: 85%;
-    margin: auto;
+	padding-top: 50px;
+	max-width: 85%;
+	margin: auto;
 }
 
 .title {
-    text-align: center;
-    font-family: 'Tangerine', serif;
-    font-size: 780%;
+	text-align: center;
+	font-family: "Tangerine", serif;
+	font-size: 780%;
 }
 
 .nav-title {
-    display: none;
+	display: none;
 }
 
 .section {
-    padding: 100px 0;
-    margin-bottom: 200px;
+	padding: 100px 0;
+	margin-bottom: 200px;
 }
 
 .plain-li {
-    list-style-type: '- ';
+	list-style-type: "- ";
 }
 
 .blank-li {
-    list-style-type: none;
+	list-style-type: none;
 }
 
 .back-to-top-button {
-    background-color: rgba(36, 114, 218, 0.822);
-    border-radius: 50%;
-    height: 75px;
-    width: 75px;
-    position: fixed;
-    bottom: 15px;
-    right: 15px;
-    padding: 10px;
-    color: white;
+	background-color: rgba(36, 114, 218, 0.822);
+	border-radius: 50%;
+	height: 75px;
+	width: 75px;
+	position: fixed;
+	bottom: 15px;
+	right: 15px;
+	padding: 10px;
+	color: white;
 
-    display: flex;
-    justify-content: center;
-    align-items: center;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 
 .alternate-section-color {
-    background-color: rgba(132, 0, 255, 0.267);
-    width: 100%;
+	background-color: rgba(0, 0, 0, 0.418);
+	width: 100%;
 }
 
 .margin-up {
-    margin-top: -90px;
+	margin-top: -90px;
 }
 
 .social-media-link {
-    margin: 30px;
+	margin: 30px;
 }
 
 h3 {
-    margin-top: 50px;
+	margin-top: 50px;
 }
 
 .t-container {
-    
-    color: white;
-    padding-bottom: 30px;
-    
+	color: white;
+	padding-bottom: 30px;
 }
 
 .t-big-card {
-    background-color: rgba(0, 0, 0, 0.897);
-    color:rgb(68, 0, 255);
-    min-width: 250px;
-    
-    border-radius: 10px;
-    border-bottom: 1px solid rgb(68, 0, 255);
-    padding: 0px 20px 20px 20px;
-    text-align: center;
+	background-color: rgba(0, 0, 0, 0.897);
+	color: rgb(68, 0, 255);
+	min-width: 250px;
+
+	border-radius: 10px;
+	border-bottom: 1px solid rgb(68, 0, 255);
+	padding: 0px 20px 20px 20px;
+	text-align: center;
 }
 
 .t-card {
-    background-color: rgba(0, 0, 0, 0.897);
-    color:rgb(68, 0, 255);
-    min-width: 250px;
-    border-radius: 10px;
-    border-bottom: 1px solid rgb(68, 0, 255);
-    padding: 0px 20px 20px 20px;
+	background-color: rgba(0, 0, 0, 0.897);
+	color: rgb(68, 0, 255);
+	min-width: 250px;
+	border-radius: 10px;
+	border-bottom: 1px solid rgb(68, 0, 255);
+	padding: 0px 20px 20px 20px;
+}
+
+.t-card:hover {
+	animation: zoom-card 2s;
+}
+
+@keyframes zoom-card {
+	10% {
+		transform: scale(1.2);
+		background-color: rgba(18, 0, 59, 0.897);
+	}
 }
 
 .skills-grid {
-    display: grid;
-    grid-gap: 25px;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-areas: 
-    "skill1 skill2 skill3"
-    "skill-large skill-large skill-large"
+	display: grid;
+	grid-gap: 25px;
+	grid-template-columns: repeat(3, 1fr);
+	grid-template-areas:
+		"skill1 skill2 skill3"
+		"skill-large skill-large skill-large";
 }
 
-@media all and (max-width: 1208px){
-    .skills-grid {
-        display: grid;
-        grid-gap: 25px;
-        grid-template-columns: repeat(2, 1fr);
-        grid-template-areas: 
-        "skill1 skill2"
-        "skill3 skill-large"
-    }
+@media all and (max-width: 1208px) {
+	.skills-grid {
+		display: grid;
+		grid-gap: 25px;
+		grid-template-columns: repeat(2, 1fr);
+		grid-template-areas:
+			"skill1 skill2"
+			"skill3 skill-large";
+	}
 
-    .frameworks li {
-        list-style-type: '- ';
-    }
+	.frameworks li {
+		list-style-type: "- ";
+	}
 
-    .frameworks {
-        text-align: left;
-    }
+	.frameworks {
+		text-align: left;
+	}
 }
 
-@media all and (max-width: 802px){
-    .skills-grid {
-        display: grid;
-        grid-gap: 25px;
-        grid-template-columns: 1fr;
-        grid-template-areas: "skill1" "skill2" "skill3" "skill-large";
-    }
+@media all and (max-width: 802px) {
+	.skills-grid {
+		display: grid;
+		grid-gap: 25px;
+		grid-template-columns: 1fr;
+		grid-template-areas: "skill1" "skill2" "skill3" "skill-large";
+	}
 
-    
-    .frameworks {
-        text-align: left;
-    }
-    .frameworks li {
-        list-style-type: '- ';
-    }
+	.frameworks {
+		text-align: left;
+	}
+	.frameworks li {
+		list-style-type: "- ";
+	}
 
-    .title {
-        font-size: 80px;
-    }
-    
-    .nav-title {
-        display: initial;
-        text-align: left;
-        
-        font-size: 100%;
-        color:rgb(3, 0, 163);
-        font-family: cursive;
-        margin: 10px 0 0 30px;
-    }
+	.title {
+		font-size: 80px;
+	}
 
-    .social-media-link {
-        margin: 10px;
-    }
+	.nav-title {
+		display: initial;
+		text-align: left;
+
+		font-size: 100%;
+		color: rgb(3, 0, 163);
+		font-family: cursive;
+		margin: 10px 0 0 30px;
+	}
+
+	.social-media-link {
+		margin: 10px;
+	}
 }
 
-@media (max-width:430px) {
-    .title {
-        font-size: 60px;
-    }
+@media (max-width: 430px) {
+	.title {
+		font-size: 60px;
+	}
 }
 
 .skill1 {
-    grid-area: skill1;
+	grid-area: skill1;
 }
 
 .skill2 {
-    grid-area: skill2;
+	grid-area: skill2;
 }
 
 .skill3 {
-    grid-area: skill3;
+	grid-area: skill3;
 }
- 
+
 .skill-large {
-    grid-area: skill-large;
+	grid-area: skill-large;
 }
 
-
-
+.skill-large:hover {
+	animation: zoom-card 2s infinite;
+}

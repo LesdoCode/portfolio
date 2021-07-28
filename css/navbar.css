@@ -1,83 +1,82 @@
 .nav-menu-button {
-    border: 1px solid;
-    border-radius: 10px;
-    cursor: pointer;
-    width: 100px;
-    margin: auto;
-    display: none;
+	border: 1px solid;
+	border-radius: 10px;
+	cursor: pointer;
+	width: 100px;
+	margin: auto;
+	display: none;
 }
 
 .t-nav-color {
-    background-color: rgba(0, 0, 0, 0.938);    
+	background-color: rgba(0, 0, 0, 0.938);
 }
 
 .t-nav {
-    padding: 10px 0;
-    position: fixed;
-    right: 0;
-    left: 0;
-    top: 0;
+	padding: 10px 0;
+	position: fixed;
+	right: 0;
+	left: 0;
+	top: 0;
+	z-index: 20;
 }
 
 .sidebar {
-    position: fixed;
-    top: 0;
-    bottom: 0;
-    right: 0;
-    background: rgb(0, 0, 0);
-    width: 90%;
-    max-width: 300px;
-    z-index: 100;
-    padding: 30px 30px 30px 0;
+	position: fixed;
+	top: 0;
+	bottom: 0;
+	right: 0;
+	background: rgb(0, 0, 0);
+	width: 90%;
+	max-width: 300px;
+	z-index: 100;
+	padding: 30px 30px 30px 0;
 }
 
 .side-nav-link {
-    text-decoration: none;
-    font-size: 15px;
+	text-decoration: none;
+	font-size: 15px;
 }
 
 .side-nav-list {
-    margin: 30px 0;
-    list-style-type: none;
-    border-bottom: 0.1px solid rgba(173, 169, 169, 0.644)
+	margin: 30px 0;
+	list-style-type: none;
+	border-bottom: 0.1px solid rgba(173, 169, 169, 0.644);
 }
 
 .close-button-container {
-    right: 0;
-    display:flex;
-
+	right: 0;
+	display: flex;
 }
 
 .close-button {
-    margin-left: auto;
-    right: 0;
+	margin-left: auto;
+	right: 0;
 }
 
 @media (max-width: 802px) {
-    .nav-menu-button {
-        display: initial;
-    }
-    .nav-item {
-        display: none;
-    }
+	.nav-menu-button {
+		display: initial;
+	}
+	.nav-item {
+		display: none;
+	}
 
-    .nav-menu-logo {
-        margin-left: 20px;
-        font-weight: 600;
-        font-size: 10px;
-        font-family: 'Times New Roman', Times, serif;
-    }
-
+	.nav-menu-logo {
+		margin-left: 20px;
+		font-weight: 600;
+		font-size: 10px;
+		font-family: "Times New Roman", Times, serif;
+	}
 }
 
-@media all and (max-width:389px) {
-    .nav-title {
-        display: initial;
-        text-align: left;
-        
-        font-size: 120%;
-        color:rgb(3, 0, 163);
-        font-family: cursive;
-        margin: 10px 0 0 30px;
-    }
+@media all and (max-width: 389px) {
+	.nav-title {
+		display: initial;
+		text-align: left;
+
+		font-size: 120%;
+		color: rgb(3, 0, 163);
+		font-family: cursive;
+		margin: 10px 0 0 30px;
+	}
 }
