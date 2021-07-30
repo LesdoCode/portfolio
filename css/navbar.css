@@ -34,7 +34,7 @@
 
 @media screen and (min-width: 803px) {
 	.sidebar {
-		max-width: 0px;
+		display: none;
 	}
 }
 
