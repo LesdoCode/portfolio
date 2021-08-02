@@ -86,3 +86,7 @@
 		margin: 10px 0 0 30px;
 	}
 }
+
+.sidebar {
+	display: none;
+}
