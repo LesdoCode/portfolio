@@ -1,0 +1,19 @@
+.flex-center-content {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.flex-space-between {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.full-width {
+	width: 100%;
+}
+
+.full-height {
+	min-height: 100%;
+}
