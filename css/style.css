@@ -1,15 +1,13 @@
 .landing-page {
-	backdrop-filter: blur(0px);
+	backdrop-filter: blur(9px);
+	background: rgba(0, 0, 0, 0.377);
 
+	height: 100vh;
 	display: flex;
 	justify-content: space-evenly;
 	flex-direction: column;
 }
 
-header,
-main {
-	background-color: rgba(0, 0, 0, 0.726);
-}
 .header-options {
 	width: 100%;
 	height: 100%;
@@ -23,6 +21,8 @@ main {
 }
 .header-options h3 {
 	margin: 8px 10px 0 10px;
+	width: 90%;
+	text-align: center;
 }
 .header-option {
 	height: 240px;
@@ -30,7 +30,7 @@ main {
 	margin: 50px;
 	padding: 7px 15px;
 	border-radius: 5px;
-	color: white;
+	color: rgb(204, 204, 204);
 	background: rgba(0, 0, 0, 0.849);
 	backdrop-filter: blur(3px);
 

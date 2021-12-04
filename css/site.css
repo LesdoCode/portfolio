@@ -12,15 +12,20 @@ body {
 }
 
 body {
-	background: url(../img/bg-sm.jpg) no-repeat center center fixed;
+	background: url(../img/bg.jpg) no-repeat center center fixed;
 	background-size: cover;
 }
 header {
-	min-height: 100%;
+	background-color: rgba(34, 34, 34, 0.342);
+}
+main {
+	background-color: rgba(0, 0, 0, 0.726);
+}
+
+header {
 	border-top: 1px solid rgba(255, 0, 0, 0.795);
 }
 main {
-	min-height: 100%;
 	width: 100%;
 }
 
@@ -29,8 +34,9 @@ h1 {
 	font-weight: bold;
 	text-align: center;
 	margin-top: 5%;
-	margin-bottom: 0;
-	color: rgb(255, 209, 209);
+	margin-bottom: -10%;
+	color: rgb(209, 194, 194);
+	width: 100%;
 }
 ::-webkit-scrollbar {
 	display: none;
