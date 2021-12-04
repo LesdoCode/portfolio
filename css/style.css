@@ -1,11 +1,11 @@
 .landing-page {
-	backdrop-filter: blur(2px);
+	backdrop-filter: blur(0px);
 
-	height: 100%;
 	display: flex;
 	justify-content: space-evenly;
 	flex-direction: column;
 }
+
 header,
 main {
 	background-color: rgba(0, 0, 0, 0.726);
@@ -30,7 +30,8 @@ main {
 	margin: 50px;
 	padding: 7px 15px;
 	border-radius: 5px;
-	background: rgba(216, 104, 104, 0.603);
+	color: white;
+	background: rgba(0, 0, 0, 0.849);
 	backdrop-filter: blur(3px);
 
 	display: flex;
@@ -40,7 +41,6 @@ main {
 }
 .header-option:hover {
 	cursor: pointer;
-	background-color: rgba(216, 104, 104, 0.5);
 	border-bottom: 2.5px solid rgb(255, 17, 0);
 }
 .header-option p {

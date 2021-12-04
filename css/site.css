@@ -12,11 +12,12 @@ body {
 }
 
 body {
-	background: url(../img/bg.jpg) no-repeat center center fixed;
+	background: url(../img/bg-sm.jpg) no-repeat center center fixed;
 	background-size: cover;
 }
 header {
-	height: 90%;
+	min-height: 100%;
+	border-top: 1px solid rgba(255, 0, 0, 0.795);
 }
 main {
 	min-height: 100%;
